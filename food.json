@@ -1,0 +1,81 @@
+{
+    "menu_sections": [
+        {
+        "section_name": "Mezeler",
+        "dishes": [
+        {
+        "dish_name": "Pasti",
+        "description": "Kızarmış baget üzerine doğranmış domates, taze fesleğen, sarımsak ve zeytinyağı.",
+        "price": 8.99,
+        "rating":  5,
+        "image_url": "https://img.bestrecipes.com.au/4dK1jEzy/h450-w650-cscale-1446441657/br-api/asset/17519/bruschetta.jpg",
+        "id":4
+        },
+        {
+        "dish_name": "Ispanaklı Enginarlı Dip Sos",
+        "description": "Ispanak, enginar ve erimiş peynirden yapılan kremsi dip. Mısır cipsi ile servis edilir.",
+        "price": 10.99,
+        "rating":  4.5,
+        "image_url": "https://www.cookingclassy.com/wp-content/uploads/2018/12/spinach-artichoke-dip-12.jpg",
+        "id":5
+        }
+        ],
+        "id":1
+        },
+        
+        {
+        "section_name": "Ana Yemekler",
+        "dishes": [
+        {
+        "dish_name": "Izgara Somon",
+        "description": "Taze ızgara somon filetosu, otlarla baharatlanmış. Buğulanmış sebzeler ve pirinç ile servis edilir.",
+        "price": 18.99,
+        "rating":  4,
+        "image_url": "https://th.bing.com/th/id/OIP._TuDqCKoZtFLczCCe0LXbgHaE8?pid=ImgDet&rs=1",
+        "id":6
+        },
+        {
+        "dish_name": "Analı Kızlı Köfte",
+        "description": "Bulgur ve kıymanın macun kıvamına gelinceye kadar yoğrularak, hazırlanan hamurun açılıp içine kıyma doldurulmasından sonra pişirilen sulu bir yemektir.",
+        "price": 14.99,
+        "rating":  5,
+        "image_url": "https://www.kulturportali.gov.tr/repoKulturPortali/small/SehirRehberi//TurkMutfagi/20190524144618422_Anali%20kizli.JPG?format=jpg&quality=50",
+        "id":7
+        },
+        {
+        "dish_name": "Filet Steak",
+        "description": "Mükemmelliğe pişirilmiş hassas filet mignon biftek. Püre patates ve kuşkonmaz ile servis edilir.",
+        "price": 26.99,
+        "rating":  4.5,
+        "image_url": "https://th.bing.com/th/id/R.ffaaa254b7770a72f287eceebf828a6b?rik=bt6TSspYOuLQVw&pid=ImgRaw&r=0",
+        "id":8
+        }
+        ],
+        "id":2
+
+        },
+        {
+        
+        "section_name": "Tatlılar",
+        "dishes": [
+        {
+        "dish_name": "Çikolatalı Lav Kek",
+        "description": "Eriyik merkezli sıcak çikolata keki. Vanilyalı dondurma ile servis edilir.",
+        "price": 7.99,
+        "rating":  5,
+        "image_url": "https://www.handletheheat.com/wp-content/uploads/2014/01/Handle-the-Heat-Chocolate-Lava-Cakes-FInals-11.jpg",
+        "id":9
+        },
+        {
+        "dish_name": "New York Cheesecake",
+        "description": "Seçtiğiniz meyve kompostosu ile süslenmiş klasik kremsi cheesecake.",
+        "price": 6.99,
+        "rating":4.5,
+        "image_url": "https://th.bing.com/th/id/R.f91ea3a61f3ae42e1472b47068b12af7?rik=dwM%2fQmPk74EPog&pid=ImgRaw&r=0",
+        "id":10
+        }
+        ],
+        "id":3
+        }
+        ]
+}
