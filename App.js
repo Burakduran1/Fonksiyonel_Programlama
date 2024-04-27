@@ -25,7 +25,7 @@ export default function App()
       >
         <Stack.Screen name="Home" component={Home} options={{ title:'Anasayfa', backgroundColor: 'gray' }}/>
         <Stack.Screen name="About" component={About} options={{title:'Hakkında', backgroundColor: 'gray' }}/>
-        <Stack.Screen name="Menu" component={Menu} options={{ title:'Menü', backgroundColor: 'gray' }}/>
+        <Stack.Screen name="Menu" component={Menu} options={{ title:'Menu', backgroundColor: 'gray' }}/>
         <Stack.Screen name="Food details" component={Fooddetails} options={{ title: 'Yemek Detayları', backgroundColor: 'gray' }}/>
       </Stack.Navigator>
     </NavigationContainer>
