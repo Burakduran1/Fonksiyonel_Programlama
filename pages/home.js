@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <View style={styles.container}>
       <View style={styles.textContainer}>
-        <Image source={require('./../assets/logo.jpg')} style={styles.logo}/>
+        <Image source={require('./../assets/logo.jpg')} style={styles.logo} />
         <Text style={styles.head}>Restorana Hoşgeldiniz</Text>
       </View>
 
@@ -20,6 +20,9 @@ const Home = () => {
       </TouchableOpacity>
       <TouchableOpacity style={styles.box} onPress={() => navigation.navigate('Contact')}>
         <Text style={styles.text}>İletişim</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.box} onPress={() => navigation.navigate('Promotions')}>
+        <Text style={styles.text}>Promosyonlar</Text>
       </TouchableOpacity>
     </View>
   );
