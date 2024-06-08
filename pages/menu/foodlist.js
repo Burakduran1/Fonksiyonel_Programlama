@@ -7,9 +7,8 @@ function Foodlist({ dishes, navigation }) {
     <ScrollView>
       {dishes.map((dish) => (
         <View key={dish.id}>
-          <TouchableOpacity style={styles.box} onPress={() => navigation.navigate('Food details', { dish })}>
-          <Image source={{ uri: dish.image_url }} style={styles.logo} />
-
+          <TouchableOpacity style={styles.box} onPress={() => navigation.navigate('Fooddetails', { dish })}>
+            <Image source={{ uri: dish.image_url }} style={styles.logo} />
             <Text style={styles.subtitle}>{dish.dish_name}</Text>
           </TouchableOpacity>
         </View>
@@ -28,15 +27,14 @@ const styles = StyleSheet.create({
     marginHorizontal: 30,
     marginVertical: 15,
     padding: 10,
-    // backgroundColor: "#F5F5F5",
     borderRadius: 30,
-    alignItems:"center",
-    justifyContent:"center"
+    alignItems: "center",
+    justifyContent: "center",
   },
   logo: {
     width: 340,
     height: 200,
-    borderRadius:20,
+    borderRadius: 20,
   },
   subtitle: {
     marginTop: 10,

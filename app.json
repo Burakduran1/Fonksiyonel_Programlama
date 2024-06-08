@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "my-food-app",
+    "name": "Restoran",
     "slug": "my-food-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -9,7 +9,10 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ffffff",
+      "android": {
+        "generateApk": true
+      }
     },
     "assetBundlePatterns": [
       "**/*"
@@ -21,10 +24,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.burakduran1.myfoodapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2c8b8778-ae41-41c6-8140-b74cbb5c5574"
+      }
     }
   }
 }

@@ -1,9 +1,25 @@
 import React from 'react';
-import { View, Text, StyleSheet, FlatList } from 'react-native';
+import { View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
 
-const Promotions = ({ menuSections }) => {
+const Promotions = ({ menuSections, navigation }) => {
   // Örnek olarak ilk menü bölümünden bazı ürünleri seçiyoruz
   const promotions = menuSections[0]?.dishes.slice(0, 3) || [];
+
+  // Her bir promosyon öğesine tıklandığında ilgili ürünün detaylarını gösteren sayfaya yönlendirme işlevselliği
+  const handlePromotionPress = (item) => {
+    navigation.navigate('Menu', { screen: 'FoodDetails', params: { dish: item } });
+  };
+
+  const renderPromotionItem = ({ item }) => (
+    <TouchableOpacity onPress={() => handlePromotionPress(item)}>
+      <View style={styles.promotionItem}>
+        
+        <Text style={styles.promotionText}>{item.name}</Text>
+        <Text>{item.description}</Text>
+        <Text>{item.price} TL</Text>
+      </View>
+    </TouchableOpacity>
+  );
 
   return (
     <View style={styles.container}>
@@ -11,13 +27,7 @@ const Promotions = ({ menuSections }) => {
       <FlatList
         data={promotions}
         keyExtractor={(item) => item.id.toString()}
-        renderItem={({ item }) => (
-          <View style={styles.promotionItem}>
-            <Text style={styles.promotionText}>{item.name}</Text>
-            <Text>{item.description}</Text>
-            <Text>{item.price} TL</Text>
-          </View>
-        )}
+        renderItem={renderPromotionItem}
       />
     </View>
   );
